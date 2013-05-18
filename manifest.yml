@@ -1,0 +1,19 @@
+---
+applications:
+  .:
+    name: reder
+    framework:
+      name: php
+      info:
+        mem: 128M
+        description: PHP Application
+        exec: 
+    infra: ap-aws
+    url: reder.ap01.aws.af.cm
+    mem: 128M
+    instances: 1
+    services:
+      n:
+        type: mysql
+      y:
+        type: mysql
